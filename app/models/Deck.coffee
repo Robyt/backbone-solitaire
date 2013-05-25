@@ -8,6 +8,15 @@ class window.Deck extends Backbone.Collection
         rank: card % 13
         suit: Math.floor((card / 13) % 4)
 
-  dealPlayer: -> hand = new Hand [ @pop(), @pop() ], @
+  dealGameBoard: ->
+    i = 0
+    while i < 7
+      column = new BoardColumn([@pop()], @, i)
+      i++
 
-  dealDealer: -> new Hand [ @pop().flip(), @pop() ], @, true
+  dealPile: ->
+
+
+  # dealPlayer: -> hand = new Hand [ @pop(), @pop() ], @
+
+  # dealDealer: -> new Hand [ @pop().flip(), @pop() ], @, true
