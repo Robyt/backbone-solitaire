@@ -4,4 +4,3 @@ class window.GameBoard extends Backbone.Collection
 
   initialize: (columnArray, @deck) ->
 
-

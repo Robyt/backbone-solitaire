@@ -4,5 +4,3 @@ class window.Game extends Backbone.Model
     @set 'deck', deck = new Deck()
     @set 'gameBoard', deck.dealGameBoard()
     @set 'gamePile', deck.dealPile()
-
-
