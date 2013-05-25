@@ -9,10 +9,17 @@ class window.Deck extends Backbone.Collection
         suit: Math.floor((card / 13) % 4)
 
   dealGameBoard: ->
+    columnStorage = []
     i = 0
     while i < 7
-      column = new BoardColumn([@pop()], @, i)
+      columnStorage[i] = []
+      j = 0
+      while j <= i
+        columnStorage[i].push(@pop())
+        j++
+      console.log(columnStorage[i])
       i++
+      new GameBoard columnStorage, @
 
   dealPile: ->
 

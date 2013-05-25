@@ -24,13 +24,21 @@
     };
 
     Deck.prototype.dealGameBoard = function() {
-      var column, i, _results;
+      var columnStorage, i, j, _results;
 
+      columnStorage = [];
       i = 0;
       _results = [];
       while (i < 7) {
-        column = new BoardColumn([this.pop()], this, i);
-        _results.push(i++);
+        columnStorage[i] = [];
+        j = 0;
+        while (j <= i) {
+          columnStorage[i].push(this.pop());
+          j++;
+        }
+        console.log(columnStorage[i]);
+        i++;
+        _results.push(new GameBoard(columnStorage, this));
       }
       return _results;
     };
