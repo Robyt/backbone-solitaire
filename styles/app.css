@@ -1,10 +1,18 @@
 .card {
-  float: left;
   border: solid 1px black;
   width: 100px;
   border-radius: 5px;
   height: 140px;
-  margin-right: 20px;
+  margin-top: -120px;
+}
+
+.card:nth-of-type(1) {
+  color: blue;
+  margin-top: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 .covered {
@@ -13,4 +21,9 @@
 
 .hand {
   overflow: auto;
+}
+
+.game-board-column {
+  float: left;
+  margin-right:20px;
 }

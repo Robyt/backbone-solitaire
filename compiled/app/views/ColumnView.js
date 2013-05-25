@@ -14,6 +14,8 @@
 
     ColumnView.prototype.className = 'game-board-column';
 
+    ColumnView.prototype.tagName = 'ul';
+
     ColumnView.prototype.template = _.template('<p>Column</p>');
 
     ColumnView.prototype.initialize = function() {

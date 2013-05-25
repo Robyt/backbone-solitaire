@@ -14,6 +14,8 @@
 
     CardView.prototype.className = 'card';
 
+    CardView.prototype.tagName = 'li';
+
     CardView.prototype.template = _.template('<%= rankName %> of <%= suitName %>');
 
     CardView.prototype.initialize = function() {

@@ -2,6 +2,8 @@ class window.CardView extends Backbone.View
 
   className: 'card'
 
+  tagName: 'li'
+
   template: _.template '<%= rankName %> of <%= suitName %>'
 
   initialize: ->

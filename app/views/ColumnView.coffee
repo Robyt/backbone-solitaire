@@ -2,6 +2,8 @@ class window.ColumnView extends Backbone.View
 
   className: 'game-board-column'
 
+  tagName: 'ul'
+
   template: _.template '<p>Column</p>'
 
   initialize: ->
