@@ -27,8 +27,11 @@
       this.$el.children().detach();
       this.$el.html(this.template());
       this.$el.addClass('game-container');
-      return this.$('.game-board-container').html(new GameBoardView({
+      this.$('.game-board-container').html(new GameBoardView({
         collection: this.model.get('gameBoard')
+      }).el);
+      return this.$('.piles-container').html(new PileView({
+        collection: this.model.get('gamePile')
       }).el);
     };
 
