@@ -16,3 +16,4 @@ class window.GameView extends Backbone.View
     @$el.addClass('game-container')
     @$('.game-board-container').html new GameBoardView(collection: @model.get 'gameBoard').el
     @$('.piles-container').html new PileView(collection: @model.get 'gamePile').el
+    @$('.build-piles-container').html new BuildPilesView(collection: @model.get 'gamePile').el

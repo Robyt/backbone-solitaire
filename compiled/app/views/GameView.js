@@ -30,7 +30,10 @@
       this.$('.game-board-container').html(new GameBoardView({
         collection: this.model.get('gameBoard')
       }).el);
-      return this.$('.piles-container').html(new PileView({
+      this.$('.piles-container').html(new PileView({
+        collection: this.model.get('gamePile')
+      }).el);
+      return this.$('.build-piles-container').html(new BuildPilesView({
         collection: this.model.get('gamePile')
       }).el);
     };

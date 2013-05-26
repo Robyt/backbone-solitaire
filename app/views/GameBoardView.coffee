@@ -2,7 +2,7 @@ class window.GameBoardView extends Backbone.View
 
   className: 'game-board'
 
-  template: _.template '<h2>Game Board</h2>'
+  template: _.template ''
 
   initialize: ->
     # @collection.on 'add remove change', => @render()

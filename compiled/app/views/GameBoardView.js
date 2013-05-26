@@ -14,7 +14,7 @@
 
     GameBoardView.prototype.className = 'game-board';
 
-    GameBoardView.prototype.template = _.template('<h2>Game Board</h2>');
+    GameBoardView.prototype.template = _.template('');
 
     GameBoardView.prototype.initialize = function() {
       return this.render();
