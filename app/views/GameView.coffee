@@ -1,7 +1,7 @@
 class window.GameView extends Backbone.View
 
   template: _.template '
-    <div>Backbone Solitaire</div>
+    <h1>Backbone Solitaire</h1>
     <div class="piles-container"></div>
     <div class="build-piles-container"></div>
     <div class="game-board-container"></div>
@@ -13,5 +13,5 @@ class window.GameView extends Backbone.View
   render: ->
     @$el.children().detach()
     @$el.html @template()
-    @$el.addClass('gameContainer')
+    @$el.addClass('game-container')
     @$('.game-board-container').html new GameBoardView(collection: @model.get 'gameBoard').el

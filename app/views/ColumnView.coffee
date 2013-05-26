@@ -4,7 +4,7 @@ class window.ColumnView extends Backbone.View
 
   tagName: 'ul'
 
-  template: _.template '<p>Column</p>'
+  template: _.template ''
 
   initialize: ->
     # @collection.on 'add remove change', => @render()

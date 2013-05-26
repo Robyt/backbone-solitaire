@@ -19,5 +19,10 @@
     <script src="compiled/app/views/GameView.js"></script>
 
     <script src="compiled/app/main.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.game-board-column li:last-child').removeClass('covered');
+      });
+    </script>
   </body>
 </html>

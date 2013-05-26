@@ -13,7 +13,7 @@
     }
 
     GameView.prototype.template = _.template('\
-    <div>Backbone Solitaire</div>\
+    <h1>Backbone Solitaire</h1>\
     <div class="piles-container"></div>\
     <div class="build-piles-container"></div>\
     <div class="game-board-container"></div>\
@@ -26,7 +26,7 @@
     GameView.prototype.render = function() {
       this.$el.children().detach();
       this.$el.html(this.template());
-      this.$el.addClass('gameContainer');
+      this.$el.addClass('game-container');
       return this.$('.game-board-container').html(new GameBoardView({
         collection: this.model.get('gameBoard')
       }).el);

@@ -36,6 +36,7 @@
           columnStorage[i].push(this.pop());
           j++;
         }
+        console.log(columnStorage[i]);
         i++;
         _results.push(new GameBoard(columnStorage, this));
       }

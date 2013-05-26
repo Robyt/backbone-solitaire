@@ -16,7 +16,7 @@
 
     ColumnView.prototype.tagName = 'ul';
 
-    ColumnView.prototype.template = _.template('<p>Column</p>');
+    ColumnView.prototype.template = _.template('');
 
     ColumnView.prototype.initialize = function() {
       return this.render();

@@ -29,7 +29,8 @@
 
     CardView.prototype.render = function() {
       this.$el.children().detach().end().html;
-      return this.$el.html(this.template(this.model.attributes[0].attributes));
+      this.$el.html(this.template(this.model.attributes[0].attributes));
+      return this.$el.addClass('covered');
     };
 
     return CardView;

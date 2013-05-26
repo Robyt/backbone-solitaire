@@ -17,7 +17,7 @@ class window.Deck extends Backbone.Collection
       while j <= i
         columnStorage[i].push(@pop())
         j++
-      # console.log(columnStorage[i])
+      console.log(columnStorage[i])
       i++
       new GameBoard columnStorage, @
 
