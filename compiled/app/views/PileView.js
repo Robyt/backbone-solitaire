@@ -14,7 +14,11 @@
 
     PileView.prototype.className = 'pile';
 
-    PileView.prototype.template = _.template('<h2>Deck</h2>');
+    PileView.prototype.template = _.template('\
+  <h2>Deck</h2>\
+  <div class="card covered deck-pile"></div>\
+  <div class="card discard-pile"></div>\
+  ');
 
     PileView.prototype.initialize = function() {
       return this.render();
@@ -22,8 +26,8 @@
 
     PileView.prototype.render = function() {
       this.$el.children().detach();
-      this.$el.html(this.template(this.collection));
-      return this.$el.append;
+      this.$el.html(this.template(this.collection.models));
+      return console.log(this.collection);
     };
 
     return PileView;

@@ -7,6 +7,10 @@ ul li {
   list-style: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 .game-container {
   margin: 0 auto;
   width: 1000px;
@@ -47,4 +51,16 @@ ul li {
 
 .front {
   z-index: 10;
+}
+
+.piles-container {
+  height: 200px;
+}
+
+.discard-pile {
+  position: relative;
+  left: 140px;
+  top: -147px;
+  margin-top: 0;
+  border: solid 2px #000;
 }

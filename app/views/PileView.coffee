@@ -2,7 +2,11 @@ class window.PileView extends Backbone.View
 
   className: 'pile'
 
-  template: _.template '<h2>Deck</h2>'
+  template: _.template '
+  <h2>Deck</h2>
+  <div class="card covered deck-pile"></div>
+  <div class="card discard-pile"></div>
+  '
 
   initialize: ->
     # @collection.on 'add remove change', => @render()
@@ -10,5 +14,5 @@ class window.PileView extends Backbone.View
 
   render: ->
     @$el.children().detach()
-    @$el.html @template @collection
-    @$el.append
+    @$el.html @template @collection.models
+    console.log(@collection)
