@@ -21,6 +21,7 @@ ul li {
   background-color: #ffffff;
   opacity: 1.0;
   padding-top: 5px;
+  padding-left: 5px;
 }
 
 .card:nth-of-type(1) {
@@ -31,6 +32,10 @@ ul li {
   background-color: black;
 }
 
+.covered p {
+  display: none;
+}
+
 .hand {
   overflow: auto;
 }
@@ -38,4 +43,8 @@ ul li {
 .game-board-column {
   float: left;
   margin-right:20px;
+}
+
+.front {
+  z-index: 10;
 }

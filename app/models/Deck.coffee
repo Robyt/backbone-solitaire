@@ -22,4 +22,4 @@ class window.Deck extends Backbone.Collection
       new GameBoard columnStorage, @
 
   dealPile: ->
-    #TODO
+    pile = @

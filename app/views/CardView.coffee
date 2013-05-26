@@ -4,14 +4,13 @@ class window.CardView extends Backbone.View
 
   tagName: 'li'
 
-  template: _.template '<%= rankName %> of <%= suitName %>'
+  template: _.template '<p><%= rankName %> of <%= suitName %></p>'
 
   initialize: ->
     @model.on 'change', => @render
     @render()
 
   render: ->
-    # console.log(@model.attributes[0])
     @$el.children().detach().end().html
     @$el.html @template @model.attributes[0].attributes
     @$el.addClass 'covered'

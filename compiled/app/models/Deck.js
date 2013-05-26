@@ -43,7 +43,11 @@
       return _results;
     };
 
-    Deck.prototype.dealPile = function() {};
+    Deck.prototype.dealPile = function() {
+      var pile;
+
+      return pile = this;
+    };
 
     return Deck;
 

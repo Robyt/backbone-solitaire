@@ -11,4 +11,4 @@ class window.PileView extends Backbone.View
   render: ->
     @$el.children().detach()
     @$el.html @template @collection
-    @$el.append 
+    @$el.append
